@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 480 120"
+  width="480"
+  height="120">
+
+	<!-- Degradados -->
+	<defs>
+		<linearGradient id="flameGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="0%" stop-color="#FF4500"/>
+			<stop offset="50%" stop-color="#FFD700"/>
+			<stop offset="100%" stop-color="#FF8C00"/>
+		</linearGradient>
+		<linearGradient id="mhGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="0%" stop-color="#FF8C00"/>
+			<stop offset="100%" stop-color="#FF4500"/>
+		</linearGradient>
+	</defs>
+
+	<!-- Llamas con contorno rojo intenso y más grueso -->
+	<g stroke="#FF4500" stroke-width="5" stroke-linejoin="round">
+		<!-- Lengua izquierda inclinada -->
+		<path
+		  d="M230,110
+         C210,80 205,60 230,30
+         C255,60 250,80 230,110
+         Z"
+		  fill="url(#flameGradient)"
+		  transform="rotate(-15 250 55)"
+    />
+		<!-- Lengua central -->
+		<path
+		  d="M250,110
+         C220,70 220,40 250,0
+         C280,40 280,70 250,110
+         Z"
+		  fill="url(#flameGradient)"
+    />
+		<!-- Lengua derecha inclinada -->
+		<path
+		  d="M270,110
+         C250,85 245,55 270,25
+         C295,55 290,85 270,110
+         Z"
+		  fill="url(#flameGradient)"
+		  transform="rotate(15 250 55)"
+    />
+	</g>
+
+	<!-- Letras "MH" centradas dentro de la llama con borde blanco -->
+	<text
+	  x="250"
+	  y="75"
+	  text-anchor="middle"
+	  font-family="Ubuntu, sans-serif"
+	  font-size="52"
+	  font-weight="bold"
+	  fill="url(#mhGradient)"
+	  stroke="#FFFFFF"
+	  stroke-width="3"
+	  paint-order="stroke fill"
+  >MH</text>
+
+	<!-- Texto "MacroHard" y "OnFire" más cerca de las llamas -->
+	<g font-family="Ubuntu, sans-serif" font-weight="bold" text-anchor="start">
+		<text
+		  x="300"
+		  y="50"
+		  font-size="32"
+		  fill="#FF4500"
+    >MacroHard</text>
+		<text
+		  x="300"
+		  y="90"
+		  font-size="32"
+		  fill="#FF4500"
+    >OnFire</text>
+	</g>
+</svg>
